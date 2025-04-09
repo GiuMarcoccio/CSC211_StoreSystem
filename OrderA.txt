@@ -1,0 +1,6 @@
+ItemID    Name    Qty 
+101    Coffee-Mug 4
+102    T-Shirt   5   
+103    Key-Chain   8        
+104    Card-Holder 7         
+105    Phone-case 6

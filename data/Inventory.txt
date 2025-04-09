@@ -1,0 +1,7 @@
+Item ID Ordered          Item Name Ordered        Item Quantity Ordered    Item Price Ordered       
+101                      Coffee-Mug               292                      4.5                      
+102                      T-Shirt                  252                      8.75                     
+103                      Key-Chain                302                      1.15                     
+104                      Card-Holder              182                      7.75                     
+105                      Phone-case               257                      6.5                      
+106                      Iphone                   500                      2300.99
