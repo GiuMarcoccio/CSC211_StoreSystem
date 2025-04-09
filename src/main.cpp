@@ -5,13 +5,6 @@
 #include <iomanip>
 #include <map>
 #include "Store.hpp"                
-#include "DisplayInventory.cpp"
-#include "SetOrder.cpp"
-#include "CalculateOrder.cpp"
-#include "OrderReceipt.cpp"
-#include "InventoryUpdate.cpp"
-#include "DisplayOrder.cpp"
-#include "AddInventory.cpp"
 
 using namespace std;
 
@@ -29,7 +22,8 @@ int main() {
     cout << "\n\nLoading Inventory...\n\n";
 
     Store store(0, "", 0, 0.0);
-    store.displayInventory("Inventory.txt");
+    store.displayInventory("data/Inventory.txt");
+
 
     do {
         cout << "\n\n";
@@ -52,11 +46,11 @@ int main() {
                     cout << "\nError: Please select an order file first using option A.\n";
                 } else {
                     cout << "\nCalculating totals...\n\n";
-                    store.calculateOrder(orderFile, "Inventory.txt");
+                    store.calculateOrder(orderFile, "data/Inventory.txt");
                 }
                 break;
 
-            case 'c':
+                case 'c':
                 if (orderFile.empty()) {
                     cout << "\nError: Please select an order file first using option A.\n";
                 } else {
@@ -64,15 +58,14 @@ int main() {
                     cin >> oNum;
                     cout << "Enter file name to export order summary: ";
                     cin >> sumOrderFile;
-                    store.calculateOrder(mapOrderGet(oNum), "Inventory.txt");
-                    store.orderReceipt(mapOrderGet(oNum), sumOrderFile);
+                    store.generateReceipt(mapOrderGet(oNum), "data/Inventory.txt", sumOrderFile);
                     cout << "\nOrder exported to: " << sumOrderFile << endl;
                 }
                 break;
 
             case 'd':
                 cout << "\nCurrent Inventory:\n\n";
-                store.displayInventory("Inventory.txt");
+                store.displayInventory("data/Inventory.txt");
                 break;
 
             case 'e':
@@ -100,8 +93,8 @@ int main() {
                 cout << "\nEnter the new inventory file name: ";
                 cin >> addnewInv;
                 cout << "\nAdding inventory...\n\n";
-                store.addInventory("Inventory.txt", addnewInv);
-                store.displayInventory("Inventory.txt");
+                store.addInventory("data/Inventory.txt", addnewInv);
+                store.displayInventory("data/Inventory.txt");
                 break;
 
             case 'h':

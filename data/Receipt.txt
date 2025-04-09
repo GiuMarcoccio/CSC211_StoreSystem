@@ -1,16 +1,15 @@
 ****************************************
 ******  S T O R E  R E C E I P T  ******
 ****************************************
-Item Name Ordered   Item Quantity Ordered
+Item Name           Quantity            
 Coffee-Mug          4                   
 T-Shirt             5                   
 Key-Chain           8                   
 Card-Holder         7                   
 Phone-case          6                   
 ----------------------------------------
-Sub-total: $        328.4               
-Tax: $              29.15               
+Sub-total: $        164.2               
+Tax: $              14.5727             
 ----------------------------------------
-Total: $            357.5               
+Total: $            178.773             
 ****************************************
-

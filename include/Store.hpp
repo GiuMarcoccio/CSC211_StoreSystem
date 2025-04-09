@@ -32,6 +32,7 @@ struct Order {
 
 // Store class definition
 class Store {
+  
 private:
     int iD;
     string name;
@@ -60,6 +61,7 @@ public:
     void orderReceipt(string orderFile, string sumOrderFile);
     void displayOrder(string orderFile);
     void addInventory(string invFile, string addInvFile);
+    void generateReceipt(string orderFile, string invFile, string outFile);
 
     // Setters
     void setItemID(int id) { iD = id; }
